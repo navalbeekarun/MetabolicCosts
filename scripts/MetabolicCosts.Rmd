@@ -102,6 +102,62 @@ colnames(MetabolicCosts)
 ```
 
 ```
+```{r}
+# Create the plot with color based on 'Size' (large, medium, small)
+ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Pre_MR_Avg, color = Size)) +
+  geom_point() +
+  labs(title = "Hind Leg Mass vs. Metabolic Rate Before Leg Loss",
+       x = "Hind Leg Mass (g)",
+       y = "Metabolic Rate (Pre-Leg Loss)",
+       color = "Size Category") +
+  theme_minimal()
+```
+```{r}
+# Create the plot with color based on 'Size' (large, medium, small)
+ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Post_MR_Avg, color = Size)) +
+  geom_point() +
+  labs(title = "Hind Leg Mass vs. Metabolic Rate After Leg Loss",
+       x = "Hind Leg Mass (g)",
+       y = "Metabolic Rate (Post-Leg Loss)",
+       color = "Size Category") +
+  theme_minimal()
+```
+
+```
+
+```
+```{r}
+
+```
+```{r}
+
+```
+
+
+```
+
+
+```
+
+```{r}
+
+```
+
+
+```
+  
+```
+
+
+
+
+```
+
+
+```
+
+
+```
 
 ```
 
