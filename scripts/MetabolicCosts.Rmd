@@ -4,6 +4,106 @@ author: "Naval Beekarun"
 date: "2025-03-02"
 output: html_document
 ---
+```{r}
+# Load the data
+```
+
+
+```{r}
+data <- read.csv("data/MetabolicCosts.csv")
+```
+```{r}
+# Load the data
+```
+
+
+```{r}
+MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
+```
+```{r}
+head(data)
+```
+```{r}
+str(data)
+```
+```{r}
+MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
+```
+```{r}
+```
+
+
+```{r}
+MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
+```
+```{r}
+head(data)
+```
+```{r}
+file.exists("data/MetabolicCosts.csv")
+```{r}
+```{r}
+
+```
+```{r}
+```
+
+
+```{r}
+MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
+```
+```{r}
+head(data)
+```
+```{r}
+head(MetabolicCosts)
+```
+```{r}
+colnames(MetabolicCosts)
+
+```
+```{r}
+colnames(MetabolicCosts) <- c("id", "avg.hind.leg.mass", "body.mass", "pre.mr.avg", "post.mr.avg", "size")
+
+```
+```{r}
+str(MetabolicCosts)
+```
+```{r}
+MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv", sep = ";")
+```
+
+
+```{r}
+head(MetabolicCosts)
+```
+```{r}
+sum(is.na(MetabolicCosts))
+
+```
+```{r}
+summary(MetabolicCosts)
+
+```
+```{r}
+colnames(MetabolicCosts) <- c("ID", "Hind_Leg_Mass", "Body_Mass_g", "Pre_MR_Avg", "Post_MR_Avg", "Size")
+```
+```{r}
+head(MetabolicCosts)
+```
+
+```
+```{r}
+colnames(MetabolicCosts)
+```
+
+```{r}
+colnames(MetabolicCosts)
+```
+
+```
+
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
