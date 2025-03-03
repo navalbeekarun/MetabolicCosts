@@ -14,7 +14,9 @@ MetabolicCosts <- read.csv("data/MetabolicCosts.csv",sep=";")
 ```
 ### Load the libraries
 ```{r}
+install.packages("tidyverse")
 library(tidyverse)
+```
 
 ```
  
