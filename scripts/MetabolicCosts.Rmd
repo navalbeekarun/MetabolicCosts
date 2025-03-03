@@ -102,6 +102,7 @@ colnames(MetabolicCosts)
 ```
 
 ```
+```
 ```{r}
 # Create the plot with color based on 'Size' (large, medium, small)
 ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Pre_MR_Avg, color = Size)) +
@@ -112,6 +113,7 @@ ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Pre_MR_Avg, color = Size)) +
        color = "Size Category") +
   theme_minimal()
 ```
+
 ```{r}
 # Create the plot with color based on 'Size' (large, medium, small)
 ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Post_MR_Avg, color = Size)) +
@@ -122,6 +124,10 @@ ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Post_MR_Avg, color = Size)) +
        color = "Size Category") +
   theme_minimal()
 ```
+
+
+```
+
 
 ```
 
