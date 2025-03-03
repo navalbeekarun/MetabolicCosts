@@ -4,76 +4,40 @@ author: "Naval Beekarun"
 date: "2025-03-02"
 output: html_document
 ---
-```{r}
-# Load the data
-```
 
-
+### Load the data 
 ```{r}
-data <- read.csv("data/MetabolicCosts.csv")
+data <- read.csv("data/MetabolicCosts.csv",sep=";")
 ```
 ```{r}
 # Load the data
 ```
-
-
+### Load the libraries
 ```{r}
-MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
+library(tidyverse)
+
 ```
+ 
+
+### Looking at the structure of the data 
 ```{r}
 head(data)
 ```
+### looking at the structure of the data
 ```{r}
 str(data)
 ```
-```{r}
-MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
-```
-```{r}
-```
-
-
-```{r}
-MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
-```
-```{r}
-head(data)
-```
+### checking if the file exists 
 ```{r}
 file.exists("data/MetabolicCosts.csv")
-```{r}
-```{r}
-
 ```
-```{r}
-```
-
-
-```{r}
-MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv")
-```
-```{r}
-head(data)
-```
-```{r}
-head(MetabolicCosts)
-```
+### seeing the column names 
 ```{r}
 colnames(MetabolicCosts)
-
-```
-```{r}
-colnames(MetabolicCosts) <- c("id", "avg.hind.leg.mass", "body.mass", "pre.mr.avg", "post.mr.avg", "size")
-
-```
-```{r}
-str(MetabolicCosts)
-```
-```{r}
-MetabolicCosts <- read.csv("C:/Users/beeka/OneDrive/Documents/R/MetabolicCosts/data/MetabolicCosts.csv", sep = ";")
 ```
 
 
+### Changing the column names 
 ```{r}
 head(MetabolicCosts)
 ```
@@ -92,19 +56,9 @@ colnames(MetabolicCosts) <- c("ID", "Hind_Leg_Mass", "Body_Mass_g", "Pre_MR_Avg"
 head(MetabolicCosts)
 ```
 
-```
-```{r}
-colnames(MetabolicCosts)
-```
 
 ```{r}
-colnames(MetabolicCosts)
-```
-
-```
-```
-```{r}
-# Create the plot with color based on 'Size' (large, medium, small)
+## Create the plot with color based on 'Size' (large, medium, small)
 ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Pre_MR_Avg, color = Size)) +
   geom_point() +
   labs(title = "Hind Leg Mass vs. Metabolic Rate Before Leg Loss",
@@ -115,7 +69,7 @@ ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Pre_MR_Avg, color = Size)) +
 ```
 
 ```{r}
-# Create the plot with color based on 'Size' (large, medium, small)
+## Create the plot with color based on 'Size' (large, medium, small)
 ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Post_MR_Avg, color = Size)) +
   geom_point() +
   labs(title = "Hind Leg Mass vs. Metabolic Rate After Leg Loss",
@@ -171,22 +125,3 @@ ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Post_MR_Avg, color = Size)) +
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
