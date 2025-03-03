@@ -7,7 +7,7 @@ output: html_document
 
 ### Load the data 
 ```{r}
-data <- read.csv("data/MetabolicCosts.csv",sep=";")
+MetabolicCosts <- read.csv("data/MetabolicCosts.csv",sep=";")
 ```
 ```{r}
 # Load the data
@@ -56,7 +56,7 @@ colnames(MetabolicCosts) <- c("ID", "Hind_Leg_Mass", "Body_Mass_g", "Pre_MR_Avg"
 head(MetabolicCosts)
 ```
 
-
+## Creating plots
 ```{r}
 ## Create the plot with color based on 'Size' (large, medium, small)
 ggplot(MetabolicCosts, aes(x = Hind_Leg_Mass, y = Pre_MR_Avg, color = Size)) +
